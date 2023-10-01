@@ -1,5 +1,72 @@
-sources:
-  - QLDSchoolHand.glyphs
 axisOrder:
-  - wght
+- wght
 familyName: QLD School Hand
+recipe:
+  ../fonts/variable/QLDSchoolHand[wght].ttf:
+  - source: QLDSchoolHand.glyphs
+  - fontmake_args: '--filter ... --filter FlattenComponentsFilter --filter DecomposeTransformedComponentsFilter '
+    operation: buildVariable
+  - operation: fix
+  - operation: buildStat
+  ../fonts/variable/QLDSchoolHand-Precursive[wght].ttf:
+  - source: QLDSchoolHand.glyphs
+  - fontmake_args: '--filter ... --filter FlattenComponentsFilter --filter DecomposeTransformedComponentsFilter '
+    operation: buildVariable
+  - operation: fix
+  - operation: buildStat
+  - operation: featureFreeze
+    args: -f ss01
+  - operation: rename
+    name: QLD School Hand Precursive
+  ../fonts/variable/QLDSchoolHand-Outline[wght].ttf:
+  - source: QLDSchoolHand.glyphs
+  - fontmake_args: '--filter ... --filter FlattenComponentsFilter --filter DecomposeTransformedComponentsFilter '
+    operation: buildVariable
+  - operation: fix
+  - operation: buildStat
+  - operation: featureFreeze
+    args: -f ss02
+  - operation: rename
+    name: QLD School Hand Outline
+  ../fonts/variable/QLDSchoolHand-Cursive[wght].ttf:
+  - source: QLDSchoolHand.glyphs
+  - fontmake_args: '--filter ... --filter FlattenComponentsFilter --filter DecomposeTransformedComponentsFilter '
+    operation: buildVariable
+  - operation: fix
+  - operation: buildStat
+  - operation: featureFreeze
+    args: -f ss03
+  - operation: rename
+    name: QLD School Hand Cursive
+  ../fonts/variable/QLDSchoolHand-OutlineStarters[wght].ttf:
+  - source: QLDSchoolHand.glyphs
+  - fontmake_args: '--filter ... --filter FlattenComponentsFilter --filter DecomposeTransformedComponentsFilter '
+    operation: buildVariable
+  - operation: fix
+  - operation: buildStat
+  - operation: featureFreeze
+    args: -f ss04
+  - operation: rename
+    name: QLD School Hand Outline Starters
+  ../fonts/variable/QLDSchoolHand-OutlineArrows[wght].ttf:
+  - source: QLDSchoolHand.glyphs
+  - fontmake_args: '--filter ... --filter FlattenComponentsFilter --filter DecomposeTransformedComponentsFilter '
+    operation: buildVariable
+  - operation: fix
+  - operation: buildStat
+  - operation: featureFreeze
+    args: -f ss05
+  - operation: rename
+    name: QLD School Hand Outline Arrows
+  ../fonts/variable/QLDSchoolHand-Dotted[wght].ttf:
+  - source: QLDSchoolHand.glyphs
+  - fontmake_args: '--filter ... --filter FlattenComponentsFilter --filter DecomposeTransformedComponentsFilter '
+    operation: buildVariable
+  - operation: fix
+  - operation: buildStat
+  - operation: featureFreeze
+    args: -f ss06
+  - operation: rename
+    name: QLD School Hand Dotted
+sources:
+- QLDSchoolHand.glyphs
