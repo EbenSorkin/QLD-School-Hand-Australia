@@ -1,5 +1,5 @@
-SOURCES=$(shell python3 scripts/read-config.py --sources )
-FAMILY=$(shell python3 scripts/read-config.py --family )
+SOURCES=sources/QLDSchoolHand.glyphs
+FAMILY=QLD School Hand:
 DRAWBOT_SCRIPTS=$(shell ls documentation/*.py)
 DRAWBOT_OUTPUT=$(shell ls documentation/*.py | sed 's/\.py/.png/g')
 
@@ -18,12 +18,9 @@ build: build.stamp
 
 venv: venv/touchfile
 
-build.stamp: venv .init.stamp sources/config.yaml $(SOURCES)
+build.stamp: venv sources/config.yaml $(SOURCES)
 	rm -rf fonts
 	(for config in sources/config*.yaml; do . venv/bin/activate; gftools builder $$config; done)  && touch build.stamp
-
-.init.stamp: venv
-	. venv/bin/activate; python3 scripts/first-run.py
 
 venv/touchfile: requirements.txt
 	test -d venv || python3 -m venv venv
