@@ -22,12 +22,12 @@ subset = { "operation": "hbsubset", }
 
 def varfont_path(suffix=None):
     if suffix:
-        return f"../fonts/variable/QLDSchoolHand-{suffix}[wght].ttf"
+        return f"../fonts/variable/QLDSchoolHand{suffix}[wght].ttf"
     else:
         return "../fonts/variable/QLDSchoolHand[wght].ttf"
     
 def static_path(suffix, style):
-    return f"../fonts/static/QLDSchoolHand-{suffix}-{style}.ttf"
+    return f"../fonts/static/QLDSchoolHand{suffix}-{style}.ttf"
 
 base_steps = [
     { "source": "QLDSchoolHand.glyphs"},
@@ -79,6 +79,7 @@ for feature, name in features.items():
                             "axes": f"wght={wght}",
                             "other_args": "--update-name-table"
             },
+            { "operation": "autohint"},
             subset,
             {"postprocess": "fix", "fixargs": "--include-source-fixes"}
         ]
