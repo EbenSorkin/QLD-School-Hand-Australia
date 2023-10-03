@@ -60,7 +60,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/static/QLDSchoolHandPrecursive-Medium.ttf:
   - source: QLDSchoolHand.glyphs
@@ -76,7 +76,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/static/QLDSchoolHandPrecursive-SemiBold.ttf:
   - source: QLDSchoolHand.glyphs
@@ -92,7 +92,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/static/QLDSchoolHandPrecursive-Bold.ttf:
   - source: QLDSchoolHand.glyphs
@@ -108,7 +108,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/variable/QLDSchoolHandOutline[wght].ttf:
   - source: QLDSchoolHand.glyphs
@@ -150,7 +150,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/static/QLDSchoolHandOutline-Medium.ttf:
   - source: QLDSchoolHand.glyphs
@@ -166,7 +166,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/static/QLDSchoolHandOutline-SemiBold.ttf:
   - source: QLDSchoolHand.glyphs
@@ -182,7 +182,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/static/QLDSchoolHandOutline-Bold.ttf:
   - source: QLDSchoolHand.glyphs
@@ -198,7 +198,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/variable/QLDSchoolHandCursive[wght].ttf:
   - source: QLDSchoolHand.glyphs
@@ -240,7 +240,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/static/QLDSchoolHandCursive-Medium.ttf:
   - source: QLDSchoolHand.glyphs
@@ -256,7 +256,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/static/QLDSchoolHandCursive-SemiBold.ttf:
   - source: QLDSchoolHand.glyphs
@@ -272,7 +272,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/static/QLDSchoolHandCursive-Bold.ttf:
   - source: QLDSchoolHand.glyphs
@@ -288,7 +288,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/variable/QLDSchoolHandOutlineStarters[wght].ttf:
   - source: QLDSchoolHand.glyphs
@@ -330,7 +330,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/static/QLDSchoolHandOutlineStarters-Medium.ttf:
   - source: QLDSchoolHand.glyphs
@@ -346,7 +346,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/static/QLDSchoolHandOutlineStarters-SemiBold.ttf:
   - source: QLDSchoolHand.glyphs
@@ -362,7 +362,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/static/QLDSchoolHandOutlineStarters-Bold.ttf:
   - source: QLDSchoolHand.glyphs
@@ -378,7 +378,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/variable/QLDSchoolHandOutlineArrows[wght].ttf:
   - source: QLDSchoolHand.glyphs
@@ -420,7 +420,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/static/QLDSchoolHandOutlineArrows-Medium.ttf:
   - source: QLDSchoolHand.glyphs
@@ -436,7 +436,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/static/QLDSchoolHandOutlineArrows-SemiBold.ttf:
   - source: QLDSchoolHand.glyphs
@@ -452,7 +452,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/static/QLDSchoolHandOutlineArrows-Bold.ttf:
   - source: QLDSchoolHand.glyphs
@@ -468,7 +468,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/variable/QLDSchoolHandDotted[wght].ttf:
   - source: QLDSchoolHand.glyphs
@@ -510,7 +510,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/static/QLDSchoolHandDotted-Medium.ttf:
   - source: QLDSchoolHand.glyphs
@@ -526,7 +526,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/static/QLDSchoolHandDotted-SemiBold.ttf:
   - source: QLDSchoolHand.glyphs
@@ -542,7 +542,7 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes
   ../fonts/static/QLDSchoolHandDotted-Bold.ttf:
   - source: QLDSchoolHand.glyphs
@@ -558,5 +558,5 @@ recipe:
     other_args: --update-name-table
   - operation: autohint
   - operation: hbsubset
-  - postprocess: fix
+  - operation: fix
     fixargs: --include-source-fixes

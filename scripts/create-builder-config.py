@@ -81,7 +81,7 @@ for feature, name in features.items():
             },
             { "operation": "autohint"},
             subset,
-            {"postprocess": "fix", "fixargs": "--include-source-fixes"}
+            {"operation": "fix", "fixargs": "--include-source-fixes"}
         ]
 
 with open("sources/config.yaml", "w") as file:
