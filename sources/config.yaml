@@ -6,67 +6,185 @@ recipe:
   - source: QLDSchoolHand.glyphs
   - fontmake_args: '--filter ... --filter FlattenComponentsFilter --filter DecomposeTransformedComponentsFilter '
     operation: buildVariable
-  - operation: fix
   - operation: buildStat
+  - operation: fix
   ../fonts/variable/QLDSchoolHand-Precursive[wght].ttf:
   - source: QLDSchoolHand.glyphs
   - fontmake_args: '--filter ... --filter FlattenComponentsFilter --filter DecomposeTransformedComponentsFilter '
     operation: buildVariable
-  - operation: fix
   - operation: buildStat
   - operation: featureFreeze
     args: -f ss01
   - operation: rename
     name: QLD School Hand Precursive
+  - operation: hbsubset
+  - operation: fix
   ../fonts/variable/QLDSchoolHand-Outline[wght].ttf:
   - source: QLDSchoolHand.glyphs
   - fontmake_args: '--filter ... --filter FlattenComponentsFilter --filter DecomposeTransformedComponentsFilter '
     operation: buildVariable
-  - operation: fix
   - operation: buildStat
   - operation: featureFreeze
     args: -f ss02
   - operation: rename
     name: QLD School Hand Outline
+  - operation: hbsubset
+  - operation: fix
   ../fonts/variable/QLDSchoolHand-Cursive[wght].ttf:
   - source: QLDSchoolHand.glyphs
   - fontmake_args: '--filter ... --filter FlattenComponentsFilter --filter DecomposeTransformedComponentsFilter '
     operation: buildVariable
-  - operation: fix
   - operation: buildStat
   - operation: featureFreeze
     args: -f ss03
   - operation: rename
     name: QLD School Hand Cursive
+  - operation: hbsubset
+  - operation: fix
   ../fonts/variable/QLDSchoolHand-OutlineStarters[wght].ttf:
   - source: QLDSchoolHand.glyphs
   - fontmake_args: '--filter ... --filter FlattenComponentsFilter --filter DecomposeTransformedComponentsFilter '
     operation: buildVariable
-  - operation: fix
   - operation: buildStat
   - operation: featureFreeze
     args: -f ss04
   - operation: rename
     name: QLD School Hand Outline Starters
+  - operation: hbsubset
+  - operation: fix
   ../fonts/variable/QLDSchoolHand-OutlineArrows[wght].ttf:
   - source: QLDSchoolHand.glyphs
   - fontmake_args: '--filter ... --filter FlattenComponentsFilter --filter DecomposeTransformedComponentsFilter '
     operation: buildVariable
-  - operation: fix
   - operation: buildStat
   - operation: featureFreeze
     args: -f ss05
   - operation: rename
     name: QLD School Hand Outline Arrows
+  - operation: hbsubset
+  - operation: fix
+
   ../fonts/variable/QLDSchoolHand-Dotted[wght].ttf:
   - source: QLDSchoolHand.glyphs
   - fontmake_args: '--filter ... --filter FlattenComponentsFilter --filter DecomposeTransformedComponentsFilter '
     operation: buildVariable
-  - operation: fix
   - operation: buildStat
   - operation: featureFreeze
     args: -f ss06
   - operation: rename
     name: QLD School Hand Dotted
+  - operation: hbsubset
+  - operation: fix
+
+  ../fonts/variable/QLDSchoolHand-Guidelines[wght].ttf:
+  - source: QLDSchoolHand.glyphs
+  - operation: exec
+    exe: python3 ../scripts/add-guidelines.py
+    args: -o QLDSchoolHand-Guidelines.glyphs --overlap 200 QLDSchoolHand.glyphs
+  - source: QLDSchoolHand-Guidelines.glyphs
+  - fontmake_args: '--filter ... --filter FlattenComponentsFilter --filter DecomposeTransformedComponentsFilter '
+    operation: buildVariable
+  - operation: buildStat
+  - operation: rename
+    name: QLD School Hand Guidelines
+  - operation: hbsubset
+  - operation: fix
+
+  ../fonts/variable/QLDSchoolHand-Guidelines-Precursive[wght].ttf:
+  - source: QLDSchoolHand.glyphs
+  - operation: exec
+    exe: python3 ../scripts/add-guidelines.py
+    args: -o QLDSchoolHand-Guidelines.glyphs --overlap 200 QLDSchoolHand.glyphs
+  - source: QLDSchoolHand-Guidelines.glyphs
+  - fontmake_args: '--filter ... --filter FlattenComponentsFilter --filter DecomposeTransformedComponentsFilter '
+    operation: buildVariable
+  - operation: buildStat
+  - operation: featureFreeze
+    args: -f ss01
+  - operation: rename
+    name: QLD School Hand Guidelines Precursive
+  - operation: hbsubset
+  - operation: fix
+
+  ../fonts/variable/QLDSchoolHand-Guidelines-Outline[wght].ttf:
+  - source: QLDSchoolHand.glyphs
+  - operation: exec
+    exe: python3 ../scripts/add-guidelines.py
+    args: -o QLDSchoolHand-Guidelines.glyphs --overlap 200 QLDSchoolHand.glyphs
+  - source: QLDSchoolHand-Guidelines.glyphs
+  - fontmake_args: '--filter ... --filter FlattenComponentsFilter --filter DecomposeTransformedComponentsFilter '
+    operation: buildVariable
+  - operation: buildStat
+  - operation: featureFreeze
+    args: -f ss02
+  - operation: rename
+    name: QLD School Hand Guidelines Outline
+  - operation: hbsubset
+  - operation: fix
+
+  ../fonts/variable/QLDSchoolHand-Guidelines-Cursive[wght].ttf:
+  - source: QLDSchoolHand.glyphs
+  - operation: exec
+    exe: python3 ../scripts/add-guidelines.py
+    args: -o QLDSchoolHand-Guidelines.glyphs --overlap 200 QLDSchoolHand.glyphs
+  - source: QLDSchoolHand-Guidelines.glyphs
+  - fontmake_args: '--filter ... --filter FlattenComponentsFilter --filter DecomposeTransformedComponentsFilter '
+    operation: buildVariable
+  - operation: buildStat
+  - operation: featureFreeze
+    args: -f ss03
+  - operation: rename
+    name: QLD School Hand Guidelines Cursive
+  - operation: hbsubset
+  - operation: fix
+
+  ../fonts/variable/QLDSchoolHand-Guidelines-OutlineStarters[wght].ttf:
+  - source: QLDSchoolHand.glyphs
+  - operation: exec
+    exe: python3 ../scripts/add-guidelines.py
+    args: -o QLDSchoolHand-Guidelines.glyphs --overlap 200 QLDSchoolHand.glyphs
+  - source: QLDSchoolHand-Guidelines.glyphs
+  - fontmake_args: '--filter ... --filter FlattenComponentsFilter --filter DecomposeTransformedComponentsFilter '
+    operation: buildVariable
+  - operation: buildStat
+  - operation: featureFreeze
+    args: -f ss04
+  - operation: rename
+    name: QLD School Hand Guidelines Outline Starters
+  - operation: hbsubset
+  - operation: fix
+
+  ../fonts/variable/QLDSchoolHand-Guidelines-OutlineArrows[wght].ttf:
+  - source: QLDSchoolHand.glyphs
+  - operation: exec
+    exe: python3 ../scripts/add-guidelines.py
+    args: -o QLDSchoolHand-Guidelines.glyphs --overlap 200 QLDSchoolHand.glyphs
+  - source: QLDSchoolHand-Guidelines.glyphs
+  - fontmake_args: '--filter ... --filter FlattenComponentsFilter --filter DecomposeTransformedComponentsFilter '
+    operation: buildVariable
+  - operation: buildStat
+  - operation: featureFreeze
+    args: -f ss05
+  - operation: rename
+    name: QLD School Hand Guidelines Outline Arrows
+  - operation: hbsubset
+  - operation: fix
+
+  ../fonts/variable/QLDSchoolHand-Guidelines-Dotted[wght].ttf:
+  - source: QLDSchoolHand.glyphs
+  - operation: exec
+    exe: python3 ../scripts/add-guidelines.py
+    args: -o QLDSchoolHand-Guidelines.glyphs --overlap 200 QLDSchoolHand.glyphs
+  - source: QLDSchoolHand-Guidelines.glyphs
+  - fontmake_args: '--filter ... --filter FlattenComponentsFilter --filter DecomposeTransformedComponentsFilter '
+    operation: buildVariable
+  - operation: buildStat
+  - operation: featureFreeze
+    args: -f ss06
+  - operation: rename
+    name: QLD School Hand Guidelines Dotted
+  - operation: hbsubset
+  - operation: fix
+
 sources:
 - QLDSchoolHand.glyphs
